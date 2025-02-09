@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>📝 To-Do List</h1>
+    
+    <!-- Bouton pour passer en mode sombre -->
+    <button id="toggle-theme">🌙 Mode Sombre</button>
+
+    <!-- Formulaire pour ajouter des tâches -->
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Ajouter une nouvelle tâche" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <!-- Champ de recherche -->
+    <input type="text" id="search" placeholder="Rechercher une tâche...">
+
+    <!-- Affichage du nombre de tâches restantes -->
+    <p id="task-counter">Tâches restantes : 0</p>
+
+    <!-- Liste des tâches -->
+    <div id="todo-list"></div>
+
+    <!-- Bouton pour supprimer toutes les tâches -->
+    <button id="clear-tasks">🗑 Supprimer toutes les tâches</button>
+
+    <!-- Section de minuterie Pomodoro -->
+    <div>
+        <label for="timer-input">Temps Pomodoro (minutes) :</label>
+        <input type="number" id="timer-input" value="25" min="1" max="120"> minutes
+        <button id="start-timer">⏳ Démarrer</button>
+    </div>
+
+    <!-- Affichage du timer -->
+    <p id="timer">25:00</p>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
