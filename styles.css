@@ -204,3 +204,11 @@ input[type="text"]:focus {
 #start-timer:hover {
     background: linear-gradient(135deg, #2196F3, #1565C0);
 }
+
+#paulcode{
+    position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px;
+            border-radius: 5px;
+}
